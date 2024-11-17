@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout geral */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Cabeçalho com Banner */
+header {
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: #333;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Seção do Portfólio */
+#portfolio {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
